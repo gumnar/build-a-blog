@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <h1>{{page_title}}</h1>
+    <form action='/newpost'method='post'>
+        
+        <label for="blog_title">Title for your new blog</label>
+        <input name="blog_title"type="textarea"/>
 
+        <br/>
+
+        <label for="blog_body">Your new blog</label>
+        <input name="blog_body"type="text"/>
+
+        <input name='post_blog' value='post_blog'/>
+        
+    </form>
 {% endblock %}

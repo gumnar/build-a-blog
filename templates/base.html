@@ -1,16 +1,23 @@
 <!Doctype html>
 <html>
     <head>
-        <title>FlickList</title>
+        <title>Build a Blog</title>
         <style type="text/css">
             .error {
                 color: red;
             }
+            h1 {
+                text-align: center;
+            }
         </style>
     </head>
     <body>
-        {% block content %}
-            
+        <a href='/blog'>Main Page</a>
+        <a href='/newpost'>New Post</a>
+
+        
+        {% block content %} 
         {% endblock %}
+
     </body>
 </html>
