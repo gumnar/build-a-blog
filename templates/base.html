@@ -3,11 +3,17 @@
     <head>
         <title>Build a Blog</title>
         <style type="text/css">
-            .error {
+            .body_error {
                 color: red;
+            }
+            .title_error {
+                color:red;
             }
             h1 {
                 text-align: center;
+            }
+            form div{
+                margin: 1.5em;
             }
         </style>
     </head>
@@ -15,7 +21,7 @@
         <a href='/blog'>Main Page</a>
         <a href='/newpost'>New Post</a>
 
-        
+
         {% block content %} 
         {% endblock %}
 
